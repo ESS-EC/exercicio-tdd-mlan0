@@ -40,3 +40,19 @@ describe('Verificando se os tamanhos lados são válidos', () => {
     assert.equal(triangulo.valido(), false);
   });
 });
+
+/*
+describe('Verificando se o triangulo tem três lados', () => {
+  it('Teste: Triangulo tem três lados ', () => {
+    let triangulo = new Triangulo(100, 10)
+    assert.equal(triangulo.hasThreeSides(), false);
+  });
+});
+*/
+
+describe('Verificando se o triangulo tem três lados nulos', () => {
+  it('Teste: Triangulo tem três lados nulos', () => {
+    let triangulo = new Triangulo(0, 0, 0)
+    assert.equal(triangulo.naoNull(), false);
+  });
+});
